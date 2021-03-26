@@ -1,10 +1,9 @@
-
 def main():
     # x coord
     while True:
         try:
             xp = input("X Coord : ")
-            x = int(xp)
+            x = float(xp)
             break
         except:
             print("Incorrect Type. Try again")
@@ -13,7 +12,7 @@ def main():
         try:
             # y coord
             yp = input("Y Coord : ")
-            y = int(yp)
+            y = float(yp)
             break
         except:
             print("Incorrect Type. Try again")
@@ -39,7 +38,7 @@ def main():
         try:
             # x for center of dilation
             op1 = input("Dilation center for X : ")
-            o1 = int(op1)
+            o1 = float(op1)
             break
         except:
             print("Incorrect Type. Try again")
@@ -48,7 +47,7 @@ def main():
         try:
             # y for center of dilation
             op2 = input("Dilation center for Y : ")
-            o2 = int(op2)
+            o2 = float(op2)
             break
         except:
             print("Incorrect Type. Try again")
@@ -61,7 +60,7 @@ def main():
     xs3 = xs2 + o1
     ys3 = ys2 + o2
     print("Answer: ")
-    print(f"({xs3} {ys3})")
+    print(f"({'%.4s' % xs3}, {'%.4s' % ys3})")
     print(" ")
 
 
