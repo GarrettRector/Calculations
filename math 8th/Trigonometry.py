@@ -2,14 +2,18 @@ import math
 
 
 def main():
-    global Type, angle
+    global Type, angle, num
     inp = input()
     try:
         typeOf, Type, angle = inp.split(" ")
         angle = float(angle)
     except:
-        typeOf = inp
-        Type = "null"
+        try:
+            typeOf, num = inp.split(" ")
+            Type = "null"
+        except:
+            typeOf = inp
+            Type = "null"
     if (typeOf == "cos") & (Type == "rad"):
         print(f"cos ({angle}) = "'%.10s' % math.cos(angle))
     elif (typeOf == "sin") & (Type == "rad"):
@@ -48,6 +52,37 @@ def main():
                 pass
             else:
                 tan()
+    elif typeOf == "simplify":
+        rad1 = int(num)
+        workrad1 = rad1
+        sqrnum = 1
+
+        for i in range(2, rad1):
+            mexp = 1
+            while i ** mexp <= workrad1:
+                if workrad1 % i ** mexp == 0:
+                    mexp = mexp + 1
+                else:
+                    break
+            if mexp > 2:
+                sqrfac = i ** (int((mexp - 1) / 2))
+                sqrnum = sqrnum * sqrfac
+                workrad1 = workrad1 / (sqrfac ** 2)
+
+        outsidenum = int(sqrnum)
+        insidenum = int(rad1 / (sqrnum ** 2))
+        print("The square root of " + str(rad1) + " is"),
+        if insidenum == 1:
+            print(outsidenum)
+        else:
+            if outsidenum == 1:
+                print("√" + str(insidenum))
+            else:
+                print(str(outsidenum) + "√" + str(insidenum))
+    elif typeOf == "help":
+        print("Cmds are:\nSin, Cos, and Tan, all of which can be used with either rad or deg to get your different function. The 3rd arguement should be the number you want to be passed in\n"
+              "There is also a function to find if you need to use sin cos or tan. The command for this is type.\n"
+              "A radical simplifier is also built in, which can be used with simplify and then what you want to simplify\n")
 
 
 def cos():
