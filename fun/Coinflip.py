@@ -36,7 +36,6 @@ def cmd():
                 check = 1
         print(f"Chance for Heads: {chance_head}/{amt} ({round(chance_head / int(amt) * 100, 3)}%)")
         print(f"Chance for Tails: {chance_tail}/{amt} ({round(chance_tail / int(amt) * 100, 3)}%)")
-
     elif cmd == "avg":
         listh = []
         listt = []
