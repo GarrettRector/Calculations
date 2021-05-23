@@ -1,3 +1,10 @@
+def truncate(f, n):
+    s = '{}'.format(f)
+    if 'e' in s or 'E' in s:
+        return '{0:.{1}f}'.format(f, n)
+    i, p, d = s.partition('.')
+    return '.'.join([i, (d+'0'*n)[:n]])
+
 def main():
     # x coord
     while True:
@@ -59,9 +66,18 @@ def main():
     ys2 = ys1 * d
     xs3 = xs2 + o1
     ys3 = ys2 + o2
-    print("Answer: ")
-    print(f"({'%.4s' % xs3}, {'%.4s' % ys3})")
-    print(" ")
+    ys4 = int(abs(ys3))
+    ys4 = str(abs(ys4))
+    xs4 = int(abs(xs3))
+    xs4 = str(abs(xs4))
+    xs5 = truncate(xs4, 4+len(xs4))
+    ys5 = truncate(ys4, 4+len(ys4))
+    print("Answer:")
+    if "00" in xs5 or ys5:
+        print(f"({int(float(xs5))}, {int(float(ys5))})")
+    else:
+        print(f"({xs5}, {ys5})")
+    print("")
 
 
 while True:
