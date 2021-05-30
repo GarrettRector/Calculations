@@ -11,20 +11,20 @@ def main():
                 else:
                     print(x)
     elif ans.lower() == "range":
+        nums = []
         while True:
-            rnge = input("Range > ")
-            uppererr = False
             lowererr = False
+            uppererr = False
+            rnge = input("Range > ")
             lower, upper = rnge.split(", ")
             try:
                 lower = int(lower)
-                break
-            except:
+            except ValueError as e:
                 lowererr = True
+
             try:
                 upper = int(upper)
-                break
-            except:
+            except ValueError as e:
                 uppererr = True
             if lowererr or uppererr:
                 if lowererr and uppererr:
@@ -33,14 +33,36 @@ def main():
                     print(f"{lower} is incorrect type. Integers only.")
                 elif uppererr:
                     print(f"{upper} is incorrect type. Integers only.")
-        upper = int(upper)
-        for i in range(lower, upper + 1):
-            if i > 1:
-                for x in range(2, i):
-                    if (i % i) == 0:
+            else:
+                break
+        for num in range(lower, upper + 1):
+            if num > 1:
+                for i in range(2, num):
+                    if (num % i) == 0:
                         break
                 else:
-                    print(i)
+                    nums.append(num)
+        nums = str(nums)
+        hold, nums = nums.split("[")
+        nums, hold = nums.split("]")
+        print(nums)
+        num = None
+        print("\n")
+    elif ans.lower() == "prime":
+        num = input("Number > ")
+        num = int(num)
+        if num > 1:
+            for i in range(2, num):
+                if (num % i) == 0:
+                    print(num, "is not a prime number")
+                    print(i, "times", num // i, "is", num)
+                    break
+            else:
+                print(num, "is a prime number")
+        else:
+            print(num, "is not a prime number")
+        num = None
+        print("\n")
 
 
 while True:
