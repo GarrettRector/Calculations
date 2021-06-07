@@ -2,11 +2,11 @@
 * [Description](#calculations)
 * [Timeline](#timeline)
 * [Dialations](#dialations)
-* [Radicals](#radicals)
 * [Trig](#trigonometry)
+* [Radicals](#radicals)
 * [Coinflip](#coinflip)
-* [Prime](#primenumbers)
-* [RandStr](#randomstring)
+* [Prime](#prime numbers)
+* [RandStr](#random string)
 
 # Calculations
 
@@ -30,3 +30,18 @@ The dialations project was the first project in this repository, and was me tryi
 
 ### May of 2021 Patch:
 Fixed problematic basic rounding that prevented over 6 character answers from being properly displayed. The program would truncate everything after 6 characters, which meant if you had a 7 char answer, it would only show up as 6
+
+# Trigonometry
+#### First Released April 14th, 2021
+
+# Radicals
+#### First Released April 16th, 2021
+
+# Coinflip
+#### First Released May 10th, 2021
+
+# Random String
+#### First Released May 14th, 2021
+
+# Prime Numbers
+#### First Released May 31st, 2021
