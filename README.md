@@ -5,8 +5,8 @@
 * [Trig](#trigonometry)
 * [Radicals](#radicals)
 * [Coinflip](#coinflip)
-* [Prime](#prime numbers)
-* [RandStr](#random string)
+* [RandStr](#randomstring)
+* [Prime](#primenumbers)
 
 # Calculations
 
