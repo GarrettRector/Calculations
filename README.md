@@ -3,6 +3,7 @@
 * [Timeline](#timeline)
 * [Dialations](#dialations)
 * [Trig](#trigonometry)
+* [Inverse Trig](#inverse-trigonometry)
 * [Radicals](#radicals)
 * [Coinflip](#coinflip)
 * [RandStr](#random-string)
@@ -38,6 +39,10 @@ The trigonometry project was one of the harder math calculations projects becaus
 # Radicals
 #### First Released April 16th, 2021
 The radicals script was the last script I produced for my 8th grade math year, and was the first time I used A LOT of for loops. I learned a lot from this project and though being quite simplistic, is extremely useful.
+
+# Inverse Trigonometry
+#### First Released June 16th, 2021
+Major patch that reworks everything and added Inverse trig was made, which is based off the original script, but adds a lot, so it is a seperate release. It is also from a new school year, which is when my GSMST attendence starts.
 
 # Coinflip
 #### First Released May 10th, 2021
