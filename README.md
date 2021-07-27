@@ -8,6 +8,7 @@
 * [Coinflip](#coinflip)
 * [RandStr](#random-string)
 * [Prime](#prime-numbers)
+* [Tacos](#tacos)
 
 # Calculations
 
@@ -55,3 +56,7 @@ I was inspired by a Youtube video to do this, mainly the veritasium video about 
 # Prime Numbers
 #### First Released May 31st, 2021
 Prime numbers was just a project I did to entertain myself, and work on more algorithmic, pythonic work. I haven't really touched complex algorithms, nor pythonic work, but this was my shot at it. And so I tried doing it the ways I knew how to do it, which ended up crashing and burning. Since I didn't know how to quite do it, I did a little research (and a little stack overflow) and figured out a algorithm that worked. Not a particlularly impressive one, but one that worked.
+
+# Tacos
+#### First Released July 27th, 2021
+Tacos is just me and a couple friends having fun and trying to get a tacos script super small/efficient. Just type taco to see what it does.
