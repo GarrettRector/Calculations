@@ -49,6 +49,9 @@ Major patch that reworks everything and added Inverse trig was made, which is ba
 #### First Released May 10th, 2021
 The coinflip project was more complicated then it had to be because I added so many extra functions. This project was more of a test of my skill, rather than a project, but nonetheless was fun to work on and useful in improving my python skils.
 
+### August 2021 Patch:
+As it was one of the very first things I ever made in python, there were a lot of blunders and mistakes that very low level programmers even don't make. I fixed a decent portion of them in the Patch, and it is more efficient
+
 # Random String
 #### First Released May 14th, 2021
 I was inspired by a Youtube video to do this, mainly the veritasium video about Hilberts Hotel, in where he (Hilbert) has an infinite number of rooms and it deals with countable and uncountable infinities, but in this case I realized that I couldn't calculate any hypertasks/supertasks inside of a computer, but that infinities are a meer idea. But anyways I pretty much made a system that infinitely generates all given possibilities of strings, infinite size, and the eventual goal was to proove you can make new infinite strings, but earlier said that binary computers cannot calculate things such as infinity. though, with quantum computing i'm sure something could be done about the problem.
