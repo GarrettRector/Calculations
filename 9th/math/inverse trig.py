@@ -14,15 +14,16 @@ def main():
         except:
             typeOf = inp
             Type = "null"
+            
+       # normal block
     if (typeOf.lower() == "cos") & (Type.lower() == "rad"):
         print(f"cos ({angle}) = "'%.10s' % math.cos(angle))
     elif (typeOf.lower() == "sin") & (Type.lower() == "rad"):
         print(f"sin ({angle}) = "'%.10s' % math.sin(angle))
     elif (typeOf.lower() == "tan") & (Type.lower() == "rad"):
         print(f"tan ({angle}) = " + '%.10s' % math.tan(angle))
-    elif typeOf == "side":
-        inp = input("What side do you need? ")
-
+        
+        # inverse block
     elif (typeOf.lower() == "cos") & (Type.lower() == "deg"):
         print(f"cos ({angle}) = {math.cos(math.radians(angle))}")
     elif (typeOf.lower() == "sin") & (Type.lower() == "deg"):
