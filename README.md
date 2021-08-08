@@ -33,6 +33,9 @@ The dialations project was the first project in this repository, and was me tryi
 ### May of 2021 Patch:
 Fixed problematic basic rounding that prevented over 6 character answers from being properly displayed. The program would truncate everything after 6 characters, which meant if you had a 7 characters answer, it would only show up as 6.
 
+### August 2021 Patch:
+Improved code, as a lot of it was dated and/or was just bad programming habits
+
 # Trigonometry
 #### First Released April 14th, 2021
 The trigonometry project was one of the harder math calculations projects because I started it without really knowing what I was doing as far as the math bit went, as well as the fact that the math was difficult to do at the time for me.
