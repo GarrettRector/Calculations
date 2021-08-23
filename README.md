@@ -48,6 +48,10 @@ The radicals script was the last script I produced for my 8th grade math year, a
 #### First Released June 16th, 2021
 Major patch that reworks everything and added Inverse trig was made, which is based off the original script, but adds a lot, so it is a seperate release. It is also from a new school year, which is when my GSMST attendence starts.
 
+# Pi
+#### First Released August 15th, 2021
+Script to infinitely calculate the infinith number of pi.
+
 # Coinflip
 #### First Released May 10th, 2021
 The coinflip project was more complicated then it had to be because I added so many extra functions. This project was more of a test of my skill, rather than a project, but nonetheless was fun to work on and useful in improving my python skils.
