@@ -1,4 +1,2 @@
-arr = ["tortilla", "cheese", "meat", "MORE MEAT"]  # init array
-for _, i in enumerate(iter(bool, True)):
-    inp = input("Taco? > ")
-    if "taco" in inp: print(arr[_]) if _ <= 3 else print(arr[3])
+for i, _ in enumerate(iter(bool, True)):
+    if "taco" in input("Taco? > "): print(["tortilla", "cheese", "meat", "MORE MEAT"][i]) if i <= 3 else print(arr[3])
